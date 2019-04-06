@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Flat Responsive Bootstrap Website Tutorial</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+  <script src="scrolling.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <script type="text/javascript">
+     $(document).on('click','.navbar-collapse.in',function(e) {
+    if( $(e.target).is('a') && ( $(e.target).attr('class') != 'dropdown-toggle' ) ) {
+        $(this).collapse('hide');
+    }
+    });
+  </script>
+</head>
+<body>
+
+  <!-- navigation bar -->
+  <div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <!-- toggle button -->
+        <button class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+
+        <!-- navbar logo -->
+        <a href="#" class="navbar-brand">
+            <img src="img/logo.png" alt="#">
+          </a>
+
+      </div>
+      <!-- end of header -->
+      <!-- contents of navbar -->
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#connect">Connect</a></li>
+        </ul>
+      </div>
+      <!-- end of navbar contents -->
+    </div>
+    <!-- end of container fluid -->
+  </div>
+  <!-- end of navigation bar -->
+
+  <!-- Starting Home section -->
+  <div id="home">
+    <img src="img/desktop.png" alt="" class="banner">
+
+  </div>
+  <!-- Ending home section -->
+
+  <!-- Starting About section -->
+     <div id="about" class="container-fluid text-center">
+       <h1>Welcome to my website</h1>
+       <h3>Let me show you how to create a fantastic looking website using
+         Bootstrap along with some HTML and CSS snippets
+       </h3>
+       <br><br>
+       <!-- starting row -->
+       <div class="row">
+         <div class="col-md-6">
+           <h3>
+              Creating a website can be done in many ways.Many web hosting providers provide
+              website building tools and software.
+             This is the easiest way to build a website.Alternatively 
+             you can use programs like Wordpress and drupal to create your website.
+             It all depends on your comfort level.
+           </h3>
+        
+         </div>
+         <div class="col-md-6">
+           <img src="img/code.png" alt="" id="code">
+         </div>
+       </div>
+
+       <!-- Ending row -->
+       <br><br>
+       <!-- adding quote -->
+       <h3><i>"This is the best website ever"-J Johnston</i></h3>
+       <img src="img/charts.png" alt="" class="banner">
+      
+
+     </div>
+    
+
+    
+  <!-- Ending About section -->
+
+  <!-- Starting features section -->
+  <div class="container-fluid text-center" id="features">
+    <!-- Starting row -->
+    <div class="row">
+
+      <div class="col-sm-4">
+        <img src="img/html5.png" class="icon" alt="">
+        <h3>HTML5</h3>
+      </div>
+
+      <div class="col-sm-4">
+              <img src="img/bootstrap.png" class="icon" alt="">
+              <h3>BOOTSTRAP </h3>
+      </div>
+
+       <div class="col-sm-4">
+              <img src="img/css3.png" class="icon" alt="">
+       <h3>CSS3</h3>
+ 
+      </div>
+
+      <h3>Build responsive,mobile-first projects on the web with the world's most popular front-end component library.
+          Bootstrapia an open source toolkit for developing with HTML,CSS and JS.  
+        </h3>
+
+    </div>
+    <!-- Ending row -->
+  </div>
+  <img src="img/people.png"  class="banner" alt="">
+
+  <!-- Ending features section -->
+
+  <!-- Portfolio section  -->
+  <div id="portfolio" class="container-fluid text-center">
+   
+    <h2>Check out our portfolio</h2>
+    <!-- Starting row -->
+     <div class="row">
+
+      <div class="col-md-4">
+        <img src="img/icons/camera.png" alt="" class="icon">
+      </div>
+
+      <div class="col-md-4"> 
+        <img src="img/icons/mic.png" alt="" class="icon">
+      </div>
+
+      <div class="col-md-4">
+        <img src="img/icons/phone.png" alt="" class="icon">
+      </div>
+
+      <div class="col-md-4 hidden-sm hidden-xs">
+        <img src="img/icons/calendar.png" alt="" class="icon">
+      </div>
+
+      <div class="col-md-4 hidden-sm hidden-xs">
+        <img src="img/icons/tv.png" alt="" class="icon">
+      </div>
+
+      <div class="col-md-4 hidden-sm hidden-xs">
+        <img src="img/icons/clock.png" alt="" class="icon">
+      </div>
+
+     
+     </div>
+     <!-- Ending row -->
+
+  </div>
+  <img src="img/social.png" class="banner" alt="">
+
+
+  <!-- Ending portfolio section -->
+
+  <!-- Starting connect section -->
+
+  <footer id="connect" class="container-fluid text-center">
+    <!-- starting row -->
+    <div class="row">
+      <h2>Connect</h2>
+      <div class="social">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+      </div>
+
+    </div>
+    <!-- ending row -->
+  </footer>
+
+  <!-- Ending connect section -->
+
+
+
+
+
+
+
+
+
+<!--- Check out my course on Udemy! -->
+<!-- <div class="udemy-course" style="position: fixed; bottom: 0; right: 0; margin-bottom: -5px; z-index: 100;">
+  <a href="http://bit.ly/advanced-bootstrap-course" target="_blank" style="z-index: 999!important; cursor: pointer!important;"><img src="https://www.w3newbie.com/wp-content/uploads/nuno-udemy-banner.png" style="max-width: 100%; min-width: 100%;"></a>
+</div> -->
+
+
+</body>
+</html>
